@@ -1,0 +1,43 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.vitest.json"
+    }
+  ],
+  "compilerOptions": {
+    "paths": {
+      "~/*": ["./src/*"],
+      "@/*": ["./src/*"],
+      "@public": ["./public"],
+      "@assets": ["./src/assets"],
+      "@images": ["./src/assets/images"],
+      "@icons": ["./src/components/icons"],
+      "@components": ["./src/components"],
+      "@ui": ["./src/components/ui"],
+      "@containers": ["./src/components/containers"],
+      "@pages/*": ["./src/views/*"],
+      "@router": ["./src/router"],
+      "@layouts": ["./src/layouts"],
+      "@templates": ["./src/templates"],
+      "@utils": ["./src/utils"],
+      "@helpers": ["./src/helpers"],
+      "@plugins": ["./src/plugins"],
+      "@middleware": ["./src/middleware"],
+      "@composables": ["./src/composables"],
+      "@stores": ["./src/stores"],
+      "@services": ["./src/services"],
+      "@constants": ["./src/constants"],
+      "@interface": ["./src/types/interfaces"],
+      "@types": ["./src/types"],
+      "@enums": ["./src/types/enums"],
+      "@models": ["./src/types/models"]
+    }
+  }
+}
