@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@tanstack/vue-query": "^5.29.0",
+    "@tanstack/vue-query-devtools": "^5.29.0",
     "axios": "^1.6.8",
     "pinia": "^2.1.7",
     "sass": "^1.75.0",

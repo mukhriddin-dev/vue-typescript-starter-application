@@ -5,7 +5,6 @@
   "compilerOptions": {
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"],
@@ -21,6 +20,7 @@
       "@layouts": ["./src/layouts"],
       "@templates": ["./src/templates"],
       "@utils": ["./src/utils"],
+      "@utils/*": ["./src/utils/*"],
       "@helpers": ["./src/helpers"],
       "@plugins": ["./src/plugins"],
       "@middleware": ["./src/middleware"],

@@ -27,6 +27,7 @@
       "@layouts": ["./src/layouts"],
       "@templates": ["./src/templates"],
       "@utils": ["./src/utils"],
+      "@utils/*": ["./src/utils/*"],
       "@helpers": ["./src/helpers"],
       "@plugins": ["./src/plugins"],
       "@middleware": ["./src/middleware"],
@@ -38,6 +39,8 @@
       "@types": ["./src/types"],
       "@enums": ["./src/types/enums"],
       "@models": ["./src/types/models"]
-    }
+    },
+    "jsx": "preserve",
+    "jsxImportSource": "vue"
   }
 }
