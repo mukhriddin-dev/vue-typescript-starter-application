@@ -6,15 +6,18 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import Components from 'unplugin-vue-components/vite'
 
-// https://vitejs.dev/config/
+
 export default defineConfig({
+
   plugins: [
     vue(),
     vueJsx(),
     VueDevTools(),
     Components({dirs: ["src/components"]})
   ],
+
   resolve: {
+    
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '~': fileURLToPath(new URL('./test', import.meta.url)),
@@ -25,6 +28,7 @@ export default defineConfig({
       "@assets": fileURLToPath(new URL('./src/assets', import.meta.url)),
       "@images":fileURLToPath(new URL("./src/assets/images", import.meta.url)),
       "@stores": fileURLToPath(new URL('./src/stores', import.meta.url)),
+      "@stores/*": fileURLToPath(new URL('./src/stores/*', import.meta.url)),
       "@router": fileURLToPath(new URL('./src/router', import.meta.url)),
       "@plugins": fileURLToPath(new URL('./src/plugins', import.meta.url)),
       "@middleware": fileURLToPath(new URL("./src/middleware", import.meta.url)),
@@ -32,6 +36,7 @@ export default defineConfig({
       "@utils": fileURLToPath(new URL('./src/utils', import.meta.url)),
       "@utils/*": fileURLToPath(new URL('./src/utils/*', import.meta.url)),
       "@services": fileURLToPath(new URL('./src/services', import.meta.url)),
+      "@services/*": fileURLToPath(new URL('./src/services/*', import.meta.url)),
       "@layouts": fileURLToPath(new URL('./src/layouts', import.meta.url)),
       "@pages": fileURLToPath(new URL('./src/views', import.meta.url)),
       "@templates": fileURLToPath(new URL('./src/templates', import.meta.url)),
@@ -43,6 +48,7 @@ export default defineConfig({
       "@types":  fileURLToPath(new URL('./src/types/types', import.meta.url)),
     },
   },
+
   build: {
     rollupOptions: {
       output: {
@@ -51,5 +57,6 @@ export default defineConfig({
         },
       },
     },
-  },
+  }
+
 })

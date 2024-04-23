@@ -7,6 +7,7 @@ This template should help get you started developing with Vue 3 in Vite.
 ## Folder structure
 
 ```
+```
 └── 📁src
     └── App.vue
     └── 📁assets
@@ -38,6 +39,12 @@ This template should help get you started developing with Vue 3 in Vite.
     └── 📁helpers
         └── index.ts
     └── 📁layouts
+        └── 📁auth
+            └── index.vue
+            └── style.scss
+        └── 📁dashboard
+            └── index.vue
+            └── style.scss
         └── index.ts
     └── main.ts
     └── 📁middleware
@@ -46,6 +53,12 @@ This template should help get you started developing with Vue 3 in Vite.
         └── index.ts
     └── 📁router
         └── index.ts
+    └── 📁services
+        └── config.ts
+        └── index.ts
+        └── 📁post
+            └── index.ts
+        └── readme.md
     └── 📁stores
         └── counter.ts
         └── index.ts
@@ -62,11 +75,16 @@ This template should help get you started developing with Vue 3 in Vite.
         └── 📁types
             └── index.ts
     └── 📁utils
+        └── 📁dev-tool
+            └── index.vue
         └── index.ts
+        └── 📁use-mutation
+            └── index.ts
     └── 📁views
         └── 📁home
             └── index.vue
         └── index.ts
+```
 ```
 
 ## Recommended IDE Setup

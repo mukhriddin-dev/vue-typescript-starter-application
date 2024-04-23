@@ -33,9 +33,11 @@
       "@middleware": ["./src/middleware"],
       "@composables": ["./src/composables"],
       "@stores": ["./src/stores"],
+      "@stores/*": ["./src/stores/*"],
       "@services": ["./src/services"],
+      "@services/*": ["./src/services/*"],
       "@constants": ["./src/constants"],
-      "@interface": ["./src/types/interfaces"],
+      "@interfaces": ["./src/types/interfaces"],
       "@types": ["./src/types"],
       "@enums": ["./src/types/enums"],
       "@models": ["./src/types/models"]
