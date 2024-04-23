@@ -6,7 +6,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 ## Folder structure
 
-```
+
 ```
 └── 📁src
     └── App.vue
@@ -85,7 +85,7 @@ This template should help get you started developing with Vue 3 in Vite.
             └── index.vue
         └── index.ts
 ```
-```
+
 
 ## Recommended IDE Setup
 
